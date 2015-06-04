@@ -31,7 +31,7 @@ class TW_Recent_Posts extends WP_Widget
 {
 
     //	@var string(The plugin version)
-    var $version = '1.0.4';
+    var $version = '1.1.5';
     //	@var string(Domain used for localization)
     var $localization_domain = 'tw-recent-posts';
     //	@var string(The url to this plugin)
