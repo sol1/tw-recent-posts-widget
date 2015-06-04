@@ -1,5 +1,5 @@
 === TW Recent Posts Widget ===
-Contributors: tweetysha, https://github.com/afoster 
+Contributors: tweetysha, rebroken
 Tags: recent posts, advanced recent posts, recent posts widget, advanced recent posts widget, category, posts, recent, widget, post plugins
 Requires at least: 3.0
 Tested up to: 4.2.2
