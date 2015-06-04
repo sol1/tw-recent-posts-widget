@@ -80,7 +80,8 @@ class TW_Recent_Posts extends WP_Widget
     {
         global $post;
 
-        $post_excerpt = $post->post_excerpt;
+        setup_postdata( $post );
+        $post_excerpt = get_the_excerpt();
 
         if($post_excerpt != '') {
 
@@ -189,8 +190,8 @@ while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 	<?php if($show_post_excerpt) { ?>
 		<div class="excerpt">
-            <?php echo $this->_truncate_post($length)
-                . ($moretext != '' ? ' <a href="' . get_permalink() . '" class="read-more">' . $moretext . '</a>' : ''); ?>
+            <?php echo $this->_truncate_post($length); ?>
+            <?php echo ($moretext != '') ? ' <a href="' . get_permalink() . '" class="read-more">' . $moretext . '</a>' : ''; ?>
 		</div>
 	<?php } ?>
 
