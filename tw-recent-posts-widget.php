@@ -246,7 +246,7 @@ wp_reset_postdata();
 	name="<?php echo $this->get_field_name('category'); ?>">
 	<?php
 	echo '<option value="0" ' .('0' == $category ? 'selected="selected"' : ''). '>'. __('All categories', $this->localization_domain).'</option>';
-	$cats = get_categories(array('hide_empty' => 0, 'name' => 'category', 'hierarchical' => true));
+	$cats = get_categories(array('hide_empty' => 0, 'hierarchical' => true));
 	foreach($cats as $cat) {
 		echo '<option value="' . $cat->term_id . '" ' .($cat->term_id == $category ? 'selected="selected"' : ''). '>' . $cat->name . '</option>';
 	} ?>
