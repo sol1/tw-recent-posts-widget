@@ -3,7 +3,7 @@
 Plugin Name:       TW Recent Posts Widget
 Plugin URI:        http://vuckovic.biz/wordpress-plugins/tw-recent-posts-widget
 Description:       This is a fork of the popular TW Recent Posts Widget plugin with patches to enable it to work with current versions of WordPress. It provides a customisable widget that displays recent posts from a category of your choice.
-Version:           1.1.5
+Version:           1.1.6
 Author:            Igor Vučković, Andrew Foster 
 Author URI:        http://vuckovic.biz
 License:           GNU General Public License v2
@@ -51,7 +51,7 @@ class TW_Recent_Posts extends WP_Widget
         add_action('wp_print_styles', array(&$this, 'tw_recent_posts_css'));
 
         $widget_ops = array('classname' => 'tw-recent-posts', 'description' => __('Show recent posts from selected category. Includes advanced options.', $this->localization_domain));
-        $this->WP_Widget('tw-recent-posts', __('TW Recent Posts ', $this->localization_domain), $widget_ops);
+        parent::__construct('tw-recent-posts', __('TW Recent Posts ', $this->localization_domain), $widget_ops);
     }
 
     /**

@@ -62,6 +62,9 @@ If you set to display excerpt, than you will be able to define how many characte
 
 == Changelog ==
 
+= 1.1.6 = 
+* Remove PHP4-style constructor (WordPress 4.3 compatibility)
+
 = 1.1.5 = 
 * Sol1 fork for bugfixes (https://github.com/sol1/tw-recent-posts-widget)
 
